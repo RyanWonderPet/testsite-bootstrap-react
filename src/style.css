@@ -1,0 +1,81 @@
+
+  
+  /* --------- */
+  /*Scrollbar   */
+  /* --------- */
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2d005c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(77, 1, 165, 0.959);
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(121, 7, 250);
+    border-radius: 12px;
+  }
+  
+  /* --------- */
+  /* Navbar Section  */
+  /* --------- */
+  .div-separator
+  {
+      margin-top: 6.6px;
+      color: rgb(148, 144, 144);
+      margin-left: .5rem;
+      margin-right: .5rem;
+      font-size: small;
+  }
+
+.test-nav-brand
+  {
+      color: #388f32;
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+
+.site-nav-brand
+  {
+      color: #000000;
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+
+.nav-link:active 
+  {
+      color: green !important;
+  }
+
+.nav-link:focus 
+  {
+      color: green !important;
+  }
+
+.nav-link
+  {
+      font-weight: bold;
+  }
+
+.sm-icons 
+  {
+      flex-direction: row;
+  }
+
+@media only screen and (max-width: 992px) 
+  {
+      .sm-icons .nav-item 
+      {
+          padding-right: 1em;
+      }
+  }
+  
