@@ -1,36 +1,17 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import NavbarBrand from "react-bootstrap";
-import { NavbarToggleProps } from "react-bootstrap/esm/NavbarToggle";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
-import Collapse from "react-bootstrap";
-import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-import { Dropdown } from "react-bootstrap";
-import NavLink from "react-bootstrap";
-import { FaFacebookF } from "react-icons/fa";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
-import {
-  // AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineContacts
-} from "react-icons/ai";
-import { GiSkills } from "react-icons/gi"
-import { CgFileDocument } from "react-icons/cg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaInstagram } from "react-icons/fa";
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+
+
 
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [ updateExpanded] = useState(false);
+  const [  updateNavbar] = useState(false);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -61,11 +42,16 @@ function NavBar() {
       id="navbar7"
     >
       <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <a className="nav-link text-success" href="index.html">
-            HOME
-          </a>
-        </li>
+      <Nav.Item>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Home"
+                onClick={() => updateExpanded(false)}
+              >
+                 HOME
+              </Nav.Link>
+            </Nav.Item>
         <div className="nav-item dropdown">
           <a
             className="nav-link font-weight-bold dropdown-toggle text-dark"
@@ -104,31 +90,56 @@ function NavBar() {
             </div>
           </div>
         </div>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Services"
+                onClick={() => updateExpanded(false)}
+              >
+                 SERVICES
+              </Nav.Link>
         <li className="nav-item">
-          <a className="nav-link text-dark" href="services.html">
-            SERVICES
-          </a>
+        <Nav.Item>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Portfolio"
+                onClick={() => updateExpanded(false)}
+              >
+                 PORTFOLIO
+              </Nav.Link>
+        </Nav.Item>
         </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="portfolio.html">
-            PORTFOLIO
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="pricing.html">
-            PRICING
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="blog.html">
-            BLOG
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="contact.php">
-            CONTACT
-          </a>
-        </li>
+        <Nav.Item>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Pricing"
+                onClick={() => updateExpanded(false)}
+              >
+                 PRICING
+              </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Blog"
+                onClick={() => updateExpanded(false)}
+              >
+                 BLOG
+              </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+              <Nav.Link
+               className="text-dark"
+                as={Link}
+                to="/Contact"
+                onClick={() => updateExpanded(false)}
+              >
+                 CONTACT
+              </Nav.Link>
+        </Nav.Item>
         <li className="div-separator d-none d-lg-block">|</li>
         <ul className="navbar-nav fa-expand-lg sm-icons">
           <li className="nav-item">
@@ -155,8 +166,9 @@ function NavBar() {
       </ul>
     </div>
   </nav>
-  
+ 
   );
 }
+
 
 export default NavBar;

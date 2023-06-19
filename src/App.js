@@ -6,20 +6,25 @@ import {
   Navigate
 } from "react-router-dom";
 
-import Home from './pages/Home'
-import Skill from './pages/Skillset'
-import Project from './pages/Projects'
-import Resume from './pages/Resume'
-import Contact from './pages/Contact'
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing"
+import Blog from "./pages/Blog";
 
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import Preloader from "./components/PreLoader"
-import ScrollToTop from "./components/ScrollToTop"
+import Preloader from "./components/PreLoader";
+import ScrollToTop from "./components/ScrollToTop";
+import MyFooter from "./components/Footer/Myfooter";
+import MyFooter2 from"./components/Footer/MyFooter2";
+
+
 
 import "./App.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,16 +45,21 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/skillset" element={<Skill />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
       </div>
+      <MyFooter />
+      <MyFooter2 />
     </Router>
+    
   );
 }
+
+
 
 export default App;
