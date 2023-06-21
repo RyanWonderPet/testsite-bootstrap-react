@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faCircle, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 
 
 

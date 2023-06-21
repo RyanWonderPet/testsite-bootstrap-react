@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin, faSkype, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-function MyFooter() { 
+function MyFooter2() { 
   return (
     <div className="footer-div p-3">
     <div className="container mt-0 text-white">
@@ -37,4 +37,4 @@ function MyFooter() {
 }
 
 
-export default MyFooter;
+export default MyFooter2;

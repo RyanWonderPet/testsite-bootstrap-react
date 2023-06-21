@@ -9,7 +9,8 @@ import img6 from "../../img/blog_sidenav_img3.png";
 import img7 from "../../img/blog_sidenav_img4.png";
 import img8 from "../../img/blog_sidenav_img5.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faCommentDots, faMagnifyingGlass, faUser,  } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,9 +21,27 @@ import { faClock, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 
 
-const Gallery = () => {
+
+const MyBlog = () => {
   return (
     <>
+  {/* Breadcrumb */}
+  <div className="bg-success">
+    <div className="container div-breadcrumb">
+      <div className="row">
+        <div className="col text-white div-active-page-title">Blog</div>
+        <div className="col text-white text-right div-breadcrumb">
+          <a className="text-white" href="index.html">
+            Home
+          </a>{" "}
+          / Blog
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Breadcrumb */}
+
+
    <div className="container pt-5 pb-5">
   <div className="row">
     <div className="col-lg-8">
@@ -37,16 +56,16 @@ const Gallery = () => {
               </strong>
             </h3>
             <div className="d-flex small_pp">
-              <i className="fa-regular fa-user text-muted blog_card_icon" />
+                <FontAwesomeIcon className="blog_card_icon fa-regular text-muted" icon={faUser}/>
               <p className="text-muted small_pp">
                 <small>John Doe</small>
               </p>
-              <FontAwesomeIcon className="text-muted blog-card-icon" icon={faClock}/>
-             
+              <FontAwesomeIcon className="text-muted blog-card-icon blog_card_icon" icon={faClock}/>
+
               <p className="text-muted small_pp">
                 <small>Jan 1, 2020</small>
               </p>
-              <i className="fa-regular fa-comment-dots text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog_card_icon" icon={faCommentDots}/>
               <p className="text-muted small_pp">
                 <small>12 Comments</small>
               </p>
@@ -62,13 +81,13 @@ const Gallery = () => {
               </small>
             </p>
             <div className="d-flex justify-content-end">
-              <button
-                type="button"
-                className="btn bg-success text-white"
-                onclick="window.location.href = 'Blog_Single.html'"
-              >
-                Read More
-              </button>
+			<Link 
+				className="btn bg-success text-white"
+				role="button"
+				to="/BlogSingle"
+				> 
+				Read More
+			</Link>
             </div>
           </div>
         </div>
@@ -82,15 +101,15 @@ const Gallery = () => {
               </strong>
             </h3>
             <div className="d-flex small_pp">
-              <i className="fa-regular fa-user text-muted blog_card_icon" />
+            <FontAwesomeIcon className="blog_card_icon fa-regular text-muted" icon={faUser}/>
               <p className="text-muted small_pp">
                 <small>John Doe</small>
               </p>
-              <i className="fa-regular fa-clock text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog-card-icon blog_card_icon" icon={faClock}/>
               <p className="text-muted small_pp">
                 <small>Jan 1, 2020</small>
               </p>
-              <i className="fa-regular fa-comment-dots text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog_card_icon" icon={faCommentDots}/>
               <p className="text-muted small_pp">
                 <small>12 Comments</small>
               </p>
@@ -106,13 +125,14 @@ const Gallery = () => {
               </small>
             </p>
             <div className="d-flex justify-content-end">
-              <button
-                type="button"
-                className="btn bg-success text-white"
-                onclick="window.location.href = 'Blog_Single.html'"
-              >
-                Read More
-              </button>
+            <Link 
+				className="btn bg-success text-white"
+				role="button"
+				to="/BlogSingle"
+				> 
+				Read More
+			</Link>
+
             </div>
           </div>
         </div>
@@ -126,15 +146,15 @@ const Gallery = () => {
               </strong>
             </h3>
             <div className="d-flex small_pp">
-              <i className="fa-regular fa-user text-muted blog_card_icon" />
+            <FontAwesomeIcon className="blog_card_icon fa-regular text-muted" icon={faUser}/>
               <p className="text-muted small_pp">
                 <small>John Doe</small>
               </p>
-              <i className="fa-regular fa-clock text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog-card-icon blog_card_icon" icon={faClock}/>
               <p className="text-muted small_pp">
                 <small>Jan 1, 2020</small>
               </p>
-              <i className="fa-regular fa-comment-dots text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog_card_icon" icon={faCommentDots}/>
               <p className="text-muted small_pp">
                 <small>12 Comments</small>
               </p>
@@ -150,13 +170,13 @@ const Gallery = () => {
               </small>
             </p>
             <div className="d-flex justify-content-end">
-              <button
-                type="button"
-                className="btn bg-success text-white"
-                onclick="window.location.href = 'Blog_Single.html'"
-              >
-                Read More
-              </button>
+            <Link 
+				className="btn bg-success text-white"
+				role="button"
+				to="/BlogSingle"
+				> 
+				Read More
+			</Link>
             </div>
           </div>
         </div>
@@ -170,15 +190,15 @@ const Gallery = () => {
               </strong>
             </h3>
             <div className="d-flex small_pp">
-              <i className="fa-regular fa-user text-muted blog_card_icon" />
+            <FontAwesomeIcon className="blog_card_icon fa-regular text-muted" icon={faUser}/>
               <p className="text-muted small_pp">
                 <small>John Doe</small>
               </p>
-              <i className="fa-regular fa-clock text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog-card-icon blog_card_icon" icon={faClock}/>
               <p className="text-muted small_pp">
                 <small>Jan 1, 2020</small>
               </p>
-              <i className="fa-regular fa-comment-dots text-muted blog_card_icon" />
+              <FontAwesomeIcon className="text-muted blog_card_icon" icon={faCommentDots}/>
               <p className="text-muted small_pp">
                 <small>12</small>
               </p>
@@ -194,13 +214,13 @@ const Gallery = () => {
               </small>
             </p>
             <div className="d-flex justify-content-end">
-              <button
-                type="button"
-                className="btn bg-success text-white"
-                onclick="window.location.href = 'Blog_Single.html'"
-              >
-                Read More
-              </button>
+        		<Link 
+				className="btn bg-success text-white"
+				role="button"
+				to="/BlogSingle"
+				> 
+				Read More
+			</Link>
             </div>
           </div>
         </div>
@@ -296,7 +316,7 @@ const Gallery = () => {
           <h5 className="card-title">Recent Posts</h5>
           <div>
             <div className="d-flex pb-3 blog_sidenav_div">
-            <img src={img4} className="card-img-top div-card-img-top mx-auto" alt="avatar" />
+            <img src={img4} className="blog-card-icon" alt="avatar" />
               <div>
                 <h6 className="pl-2">
                   <small>
@@ -441,4 +461,4 @@ const Gallery = () => {
   );
 }
 
-export default Gallery;
+export default MyBlog;

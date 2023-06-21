@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
-import Row from "react-bootstrap";
+
 
 
 
@@ -12,6 +11,23 @@ import Row from "react-bootstrap";
 const MyPricing = () => {
   return (
     <>
+  {/* Breadcrumb */}
+  <div className="bg-success">
+    <div className="container div-breadcrumb">
+      <div className="row">
+        <div className="col text-white div-active-page-title">Pricing</div>
+        <div className="col text-white text-right div-breadcrumb">
+          <a className="text-white" href="index.html">
+            Home
+          </a>{" "}
+          / Pricing
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Breadcrumb */}
+
+
   <div className="container div-pricing pt-5 pb-5">
     <div className="row">
       <div className="col-lg-3 col-md-6 mb-4">

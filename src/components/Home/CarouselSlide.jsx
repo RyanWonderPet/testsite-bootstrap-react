@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
-const CarouselSlider = () => {
+const CarouselSlide = () => {
   return (
     <>
     <div
@@ -125,4 +125,4 @@ const CarouselSlider = () => {
   );
 }
 
-export default CarouselSlider;
+export default CarouselSlide;

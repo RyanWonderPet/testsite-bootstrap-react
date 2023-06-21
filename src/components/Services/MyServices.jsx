@@ -10,7 +10,7 @@ import img5 from "../../img/diveradon.png";
 
 
 
-const Services = () => {
+const MyServices = () => {
   return (
    <>
   {/* Services*/}
@@ -98,4 +98,4 @@ const Services = () => {
   );
 }
 
-export default Services;
+export default MyServices;

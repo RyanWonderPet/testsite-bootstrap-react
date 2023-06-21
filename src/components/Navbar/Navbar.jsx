@@ -42,6 +42,8 @@ function NavBar() {
       id="navbar7"
     >
       <ul className="navbar-nav ml-auto">
+
+
       <Nav.Item>
               <Nav.Link
                className="text-dark"
@@ -51,45 +53,48 @@ function NavBar() {
               >
                  HOME
               </Nav.Link>
-            </Nav.Item>
+        </Nav.Item>
+
         <div className="nav-item dropdown">
-          <a
-            className="nav-link font-weight-bold dropdown-toggle text-dark"
-            data-toggle="dropdown"
-            href="#"
-          >
-            ABOUT
-          </a>
-          <div className="dropdown-menu dropright border-0">
-            <a className="dropdown-item" href="About.html">
-              About Us
-            </a>
-            <a className="dropdown-item" href="Team.html">
-              Team
-            </a>
-            <a className="dropdown-item" href="testimonials.html">
-              Testimonials
-            </a>
-            <a
-              className="dropdown-item dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-            >
-              Deep Drop Down
-            </a>
-            <div className="dropdown-menu border-0">
-              <a className="dropdown-item" href="#">
-                item 1
-              </a>
-              <a className="dropdown-item" href="#">
-                item 2
-              </a>
-              <a className="dropdown-item" href="#">
-                item 3
-              </a>
-            </div>
-          </div>
-        </div>
+  <a
+    className="nav-link font-weight-bold dropdown-toggle text-dark"
+    data-toggle="dropdown"
+    href="#"
+  >
+    ABOUT
+  </a>
+  <div className="dropdown-menu dropright border-0">
+    <a className="dropdown-item" href="/AboutUs">
+      About Us
+    </a>
+    <a className="dropdown-item" href="/Team">
+      Team
+    </a>
+    <a className="dropdown-item" href="/MyTestimonials">
+      Testimonials
+    </a>
+    <a
+      className="dropdown-item dropdown-toggle"
+      data-toggle="dropdown"
+      href="#"
+    >
+      Deep Drop Down
+    </a>
+    <div className="dropdown-menu border-0">
+      <a className="dropdown-item" href="#">
+        item 1
+      </a>
+      <a className="dropdown-item" href="#">
+        item 2
+      </a>
+      <a className="dropdown-item" href="#">
+        item 3
+      </a>
+    </div>
+  </div>
+</div>
+
+
               <Nav.Link
                className="text-dark"
                 as={Link}
