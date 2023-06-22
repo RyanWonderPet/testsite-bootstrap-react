@@ -13,6 +13,8 @@ import img7 from "../../img/light3.jpg";
 import img8 from "../../img/plant3.jpg";
 
 
+
+
 function allBtn() {
   let plant = document.getElementsByClassName("plant");
   let glass = document.getElementsByClassName("glass");

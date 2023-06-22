@@ -4,17 +4,15 @@ import Description from '../components/Services/Description';
 import Listofclient from '../components/Clients/Listofclient';
 import AboutUs from '../components/About/AboutUs';
 import AboutBreadCrumb from '../components/About/AboutBreadCrumb';
-
 const AboutPage = () => {
-  return (  
-    <>
-      <AboutBreadCrumb/>
-      <Description/>
-      <MyTeam/>
-      <AboutUs/>
-      <Listofclient/>
-      </>
-  )
+return (  
+<>
+<AboutBreadCrumb/>
+<Description/>
+<MyTeam/>
+<AboutUs/>
+<Listofclient/>
+</>
+)
 }
-
 export default AboutPage

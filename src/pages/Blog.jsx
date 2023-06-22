@@ -1,13 +1,8 @@
 import React from 'react'
 import MyBlog from "../components/Blog/MyBlog";
-
-
 const Blog = () => {
-  return (  
-
-      <MyBlog />
-
-  )
+return (  
+<MyBlog />
+)
 }
-
 export default Blog
